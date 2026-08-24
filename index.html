@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek | Portfolio</title>
+    <title>Abhishek | Laravel, Mobile App & IT Specialist</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -26,13 +26,13 @@
     <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-200 dark:border-slate-800">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-indigo-500 to-rose-500 bg-clip-text text-transparent">
                 Abhishek.dev
             </a>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#about" class="hover:text-indigo-500 transition-colors">About</a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-indigo-500 transition-colors">Expertise</a>
                 <a href="#projects" class="hover:text-indigo-500 transition-colors">Projects</a>
-                <a href="#skills" class="hover:text-indigo-500 transition-colors">Skills</a>
+                <a href="#content" class="hover:text-indigo-500 transition-colors">Content Creation</a>
                 <a href="#contact" class="hover:text-indigo-500 transition-colors">Contact</a>
                 <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                     <i class="fa-solid fa-moon dark:hidden"></i>
@@ -43,77 +43,181 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center pt-16 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 text-sm font-semibold mb-6">
-                Welcome to my digital space
+    <section class="min-h-screen flex items-center justify-center pt-16 px-6 relative overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-40 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-200 dark:border-indigo-800 text-indigo-600 dark:text-indigo-400 text-sm font-semibold mb-6 shadow-sm">
+                <i class="fa-solid fa-terminal text-xs"></i> Laravel & Ionic Developer | IT Specialist
             </span>
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-                Hi, I'm <span class="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">Abhishek</span> 👋
+                Building scalable web apps, mobile solutions & <span class="bg-gradient-to-r from-indigo-500 to-rose-500 bg-clip-text text-transparent">digital content</span>.
             </h1>
             <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10">
-                A passionate developer building scalable web applications and interactive digital experiences.
+                Hi, I'm Abhishek. I engineer robust backend architectures, cross-platform mobile apps, and share tech insights with the community.
             </p>
-            <div class="flex justify-center gap-4">
-                <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-xl shadow-lg shadow-indigo-500/30 transition-all">
-                    View Projects
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-xl shadow-lg shadow-indigo-500/25 transition-all">
+                    Explore Projects
                 </a>
                 <a href="#contact" class="border border-slate-300 dark:border-slate-700 hover:border-indigo-500 font-medium px-6 py-3 rounded-xl transition-all">
-                    Let's Connect
+                    Get in Touch
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise / Roles Section -->
+    <section id="about" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">What I Do</h2>
+            <p class="text-slate-600 dark:text-slate-400">Bridging development, mobile engineering, and IT infrastructure</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Role 1 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-1 transition-transform">
+                <div class="w-12 h-12 bg-red-500/10 text-red-500 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                    <i class="fa-brands fa-laravel"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Laravel Developer</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                    Crafting secure APIs, robust backend systems, and clean MVC architectures using PHP and Laravel.
+                </p>
+            </div>
+            <!-- Role 2 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-1 transition-transform">
+                <div class="w-12 h-12 bg-sky-500/10 text-sky-500 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Ionic App Developer</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                    Building cross-platform, high-performance hybrid mobile apps for iOS and Android with Ionic & Angular/React.
+                </p>
+            </div>
+            <!-- Role 3 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-1 transition-transform">
+                <div class="w-12 h-12 bg-purple-500/10 text-purple-500 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Content Creator</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                    Producing technical tutorials, educational code walkthroughs, and engaging digital media content.
+                </p>
+            </div>
+            <!-- Role 4 -->
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:-translate-y-1 transition-transform">
+                <div class="w-12 h-12 bg-emerald-500/10 text-emerald-500 rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2">IT Specialist</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                    Managing infrastructure, server troubleshooting, system deployment, and ensuring optimized security workflows.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
+    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto bg-slate-100/50 dark:bg-slate-800/20 rounded-3xl my-10 border border-slate-200/60 dark:border-slate-800/60">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-4">Featured Projects</h2>
-            <p class="text-slate-600 dark:text-slate-400">Some of the things I've built recently</p>
+            <p class="text-slate-600 dark:text-slate-400">Highlighting platforms and products I've engineered</p>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project Card 1 -->
-            <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                    Full-stack MERN application featuring product search, cart management, and user authentication.
-                </p>
-                <div class="flex gap-2 mb-6">
-                    <span class="text-xs bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">React</span>
-                    <span class="text-xs bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">Node.js</span>
+        <div class="grid md:grid-cols-2 gap-8 px-4">
+            <!-- Project 1: Nihongo Learn Japanese -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="p-3 bg-rose-500/10 text-rose-500 rounded-xl text-xl"><i class="fa-solid fa-language"></i></span>
+                        <span class="text-xs bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300 px-3 py-1 rounded-full font-medium">Live App</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Nihongo - Learn Japanese</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+                        An interactive language-learning platform designed to help users master Japanese vocabulary, grammar structures, and Kanji characters through structured lessons and practice tools.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-xs bg-slate-100 dark:bg-slate-700 px-3 py-1 rounded-md font-medium">Ionic Framework</span>
+                        <span class="text-xs bg-slate-100 dark:bg-slate-700 px-3 py-1 rounded-md font-medium">Laravel API</span>
+                        <span class="text-xs bg-slate-100 dark:bg-slate-700 px-3 py-1 rounded-md font-medium">MySQL</span>
+                    </div>
                 </div>
-                <a href="#" class="text-indigo-500 font-medium text-sm hover:underline">Source Code &rarr;</a>
+                <div class="pt-4 border-t border-slate-100 dark:border-slate-700 flex gap-4">
+                    <a href="#" class="text-indigo-500 font-medium text-sm hover:underline inline-flex items-center gap-1">View Details <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
             </div>
-            <!-- Project Card 2 -->
-            <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-xl font-bold mb-2">Weather Dashboard</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                    Real-time weather application fetching temperature, humidity, and forecasts via external APIs.
-                </p>
-                <div class="flex gap-2 mb-6">
-                    <span class="text-xs bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">JavaScript</span>
-                    <span class="text-xs bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">API</span>
+
+            <!-- Project 2: E-Commerce Platform -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="p-3 bg-indigo-500/10 text-indigo-500 rounded-xl text-xl"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span class="text-xs bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300 px-3 py-1 rounded-full font-medium">Full Stack</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Advanced E-Commerce Platform</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+                        A robust, feature-rich online shopping web app featuring secure payment gateway integration, dynamic inventory management, product filtering, and an administrative dashboard.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-xs bg-slate-100 dark:bg-slate-700 px-3 py-1 rounded-md font-medium">Laravel (PHP)</span>
+                        <span class="text-xs bg-slate-100 dark:bg-slate-700 px-3 py-1 rounded-md font-medium">Tailwind CSS</span>
+                        <span class="text-xs bg-slate-100 dark:bg-slate-700 px-3 py-1 rounded-md font-medium">MySQL</span>
+                    </div>
                 </div>
-                <a href="#" class="text-indigo-500 font-medium text-sm hover:underline">Source Code &rarr;</a>
-            </div>
-            <!-- Project Card 3 -->
-            <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-                <h3 class="text-xl font-bold mb-2">Voice News Reader</h3>
-                <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                    An interactive news app controlled entirely through custom voice commands.
-                </p>
-                <div class="flex gap-2 mb-6">
-                    <span class="text-xs bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">Speech API</span>
-                    <span class="text-xs bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">JS</span>
+                <div class="pt-4 border-t border-slate-100 dark:border-slate-700 flex gap-4">
+                    <a href="#" class="text-indigo-500 font-medium text-sm hover:underline inline-flex items-center gap-1">Source Code & Demo <i class="fa-solid fa-arrow-right text-xs"></i></a>
                 </div>
-                <a href="#" class="text-indigo-500 font-medium text-sm hover:underline">Source Code &rarr;</a>
             </div>
         </div>
     </section>
 
+    <!-- Content Creator Section -->
+    <section id="content" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <div class="bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-rose-500/10 border border-indigo-200 dark:border-slate-800 rounded-3xl p-10">
+            <span class="text-rose-500 text-3xl mb-4 inline-block"><i class="fa-solid fa-podcast"></i></span>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Content Creation & Community</h2>
+            <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto mb-8">
+                As a creator, I document coding challenges, break down complex Laravel concepts, and share app development productivity workflows.
+            </p>
+            <div class="flex justify-center gap-6 text-xl">
+                <a href="#" class="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-sm hover:text-red-500 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-sm hover:text-sky-500 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-sm hover:text-indigo-500 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-sm hover:text-blue-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Let's Work Together</h2>
+            <p class="text-slate-600 dark:text-slate-400">Have a project in mind or want to talk tech? Drop a message!</p>
+        </div>
+        <form class="space-y-6 bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm" onsubmit="event.preventDefault(); alert('Thanks for reaching out! (Connect this form to Formspree or EmailJS for live submissions).');">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Your Name</label>
+                    <input type="text" required class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Your Email</label>
+                    <input type="email" required class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors">
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-2">Message</label>
+                <textarea rows="4" required class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-xl transition-all shadow-lg shadow-indigo-500/20">
+                Send Message
+            </button>
+        </form>
+    </section>
+
     <!-- Footer -->
     <footer class="py-8 text-center text-sm text-slate-500 border-t border-slate-200 dark:border-slate-800">
-        <p>&copy; 2026 Abhishek. Built with Tailwind CSS & GitHub Pages.</p>
+        <p>&copy; 2026 Abhishek. Powered by GitHub Pages.</p>
     </footer>
 
     <!-- Theme Toggle Script -->
@@ -126,7 +230,6 @@
             localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
         });
 
-        // Check saved theme preference
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             html.classList.add('dark');
         }
